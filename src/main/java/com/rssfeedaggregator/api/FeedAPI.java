@@ -1,17 +1,20 @@
 package com.rssfeedaggregator.api;
 
-import java.util.List;
+import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.MultivaluedMap;
+import javax.ws.rs.core.NewCookie;
 
-import com.rssfeedaggregator.entities.Feed;
+import com.rssfeedaggregator.entities.User;
 
-public class FeedAPI extends GenericAPI{
-	public List<Feed> getFeeds() {
-		return (List<Feed>)client
-				.target(baseUrl)
-				.path("feeds")
+public class FeedAPI {
+
+	public static User getFeeds(NewCookie o) {
+		return APIHelper.getTarget().path("feeds")
 				.request(MediaType.APPLICATION_JSON)
-				.get().getEntity();
+				.cookie(o.getName(), o.getValue()).get(User.class);
 	}
 }

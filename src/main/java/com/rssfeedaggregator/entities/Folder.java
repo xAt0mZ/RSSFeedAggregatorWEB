@@ -12,4 +12,20 @@ public class Folder {
 	public Folder() {
 
 	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public List<Feed> getFeeds() {
+		return feeds;
+	}
+
+	public void setFeeds(List<Feed> feeds) {
+		this.feeds = feeds;
+	}
 }

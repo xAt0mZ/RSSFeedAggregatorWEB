@@ -1,0 +1,16 @@
+.leftDiv {
+	width:300px;
+}
+
+.rightDiv {
+	left-margin:300px;
+}
+
+.message {
+	padding:10px 50px 10px 10px;
+	border: 1px solid;
+}
+
+.title {
+	font-weight:bold;
+}

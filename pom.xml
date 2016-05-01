@@ -47,30 +47,32 @@
 			<groupId>org.glassfish.jersey.media</groupId>
 			<artifactId>jersey-media-json-jackson</artifactId>
 		</dependency>
+		<!-- SPRING DEPENDENCIES <dependency> <groupId>org.springframework</groupId> 
+			<artifactId>spring-core</artifactId> <version>${spring.version}</version> 
+			</dependency> <dependency> <groupId>org.springframework</groupId> <artifactId>spring-web</artifactId> 
+			<version>${spring.version}</version> </dependency> <dependency> <groupId>org.springframework</groupId> 
+			<artifactId>spring-webmvc</artifactId> <version>${spring.version}</version> 
+			</dependency> -->
 
-
-		<!-- SPRING DEPENDENCIES -->
+		<!-- JSTL -->
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>${spring.version}</version>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
 
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
-			<version>${spring.version}</version>
+			<groupId>com.efsavage.jquery</groupId>
+			<artifactId>jquery-maven</artifactId>
+			<version>1.8.2</version>
 		</dependency>
+
+
 
 	</dependencies>
 	<properties>
-		<spring.version>4.2.5.RELEASE</spring.version>
+		<!-- <spring.version>4.2.5.RELEASE</spring.version> -->
 		<jersey.version>2.22.2</jersey.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
